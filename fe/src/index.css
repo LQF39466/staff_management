@@ -1,0 +1,49 @@
+@import '~antd/dist/antd.css';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  height: 100%;
+}
+
+.MainTitle {
+  color: black
+}
+
+#LoginTitle {
+  margin-top: 30px;
+}
+
+#LoginContainer {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px 0 rgb(65 69 73 / 30%);
+  width: 80%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#Username {
+  color: black;
+  margin: 10px;
+}
+
+#UserInfo {
+  display: flex;
+  align-items: center;
+}
