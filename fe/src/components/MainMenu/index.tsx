@@ -3,13 +3,18 @@ import { Link } from "react-router-dom";
 
 import type { MenuProps } from "antd";
 import { Menu } from "antd";
-import { UserOutlined, InfoCircleOutlined } from "@ant-design/icons";
+import { UserOutlined, InfoCircleOutlined, BarChartOutlined } from "@ant-design/icons";
 
 const MenuContent: MenuProps["items"] = [
   {
     key: "manage",
     icon: React.createElement(UserOutlined),
     label: <Link to="/main">用户管理</Link>,
+  },
+  {
+    key: "statistic",
+    icon: React.createElement(BarChartOutlined),
+    label: <Link to="/main/statistic">数据统计</Link>,
   },
   {
     key: "about",

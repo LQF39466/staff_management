@@ -5,6 +5,7 @@ import NotFound from "./pages/NotFound";
 import DataList from "./components/DataList";
 import About from "./components/About";
 import Details from "./components/Details";
+import Statistics from "./pages/Statistics";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
         path: "details/:uid",
         element: <Details />,
       },
+      {
+        path: "statistic",
+        element: <Statistics />,
+      }
     ],
   },
 ]);

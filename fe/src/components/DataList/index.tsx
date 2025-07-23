@@ -167,7 +167,7 @@ const DataList: React.FC = () => {
   const onSearch = (value: string) => {
     if (value !== "")
       setFilteredData(
-        data.filter((e: PersonalInfo) => e.name.startsWith(value))
+        data.filter((e: PersonalInfo) => e.name.toLowerCase().includes(value.toLowerCase()))
       );
   };
   const handleReset = () => {

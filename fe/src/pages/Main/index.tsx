@@ -33,6 +33,8 @@ function Main() {
             borderColor: "#eeeeee",
             borderBottomWidth: "2px",
             borderBottomStyle: "solid",
+            position: 'sticky',
+            top: 0,
           }}
         >
           <h1 className="MainTitle">人员管理系统</h1>
@@ -43,11 +45,18 @@ function Main() {
             </Dropdown>
           </div>
         </Header>
-        <Layout>
-          <Sider width={200} className="site-layout-background" breakpoint="lg">
+        <Layout style={{ flex: 1, overflow: "hidden" }}>
+          <Sider 
+            width={200} 
+            className="site-layout-background" 
+            breakpoint="lg" 
+            style={{ overflow: "auto" }}
+          >
             <MainMenu />
           </Sider>
-          <Content style={{ background: "white", padding: "20px 24px 24px" }}>
+          <Content
+            style={{ overflow: "auto", background: "white", padding: "20px 24px 24px" }}
+          >
             <Outlet />
           </Content>
         </Layout>
